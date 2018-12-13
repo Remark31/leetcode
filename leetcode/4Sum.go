@@ -1,9 +1,8 @@
-package main
+package leetcode
 
 import()
 
-
-func isRepeat(anss [][]int, ans []int) bool{
+func isRepeat3Sum(anss [][]int, ans []int) bool{
 	
 	for s := range(anss){
 		flag := false
@@ -50,7 +49,7 @@ func fourSum(nums []int, target int) [][]int {
 				}
 
 				if t[i] + t[j] + t[k] + t[l] == target{
-					if !isRepeat(ans , []int{t[i],t[j],t[k], t[l]}){
+					if !isRepeat3Sum(ans , []int{t[i],t[j],t[k], t[l]}){
 						ans = append(ans, []int{t[i],t[j],t[k], t[l]})
 					}
 	

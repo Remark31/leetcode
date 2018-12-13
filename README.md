@@ -10,3 +10,6 @@ func main(){
     fmt.Println("hello world!")
 }
 ```
+
+- leetcode: 来自于leetcode的题目，文件名既是题目名
+- datastruct：基础数据结构实现

@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package leetcode
 
 import()
 
@@ -50,7 +46,3 @@ func generateParenthesis(n int) []string {
 	return ans
 }
 
-func main(){
-	n := 3
-	fmt.Println(generateParenthesis(n))
-}

@@ -1,6 +1,5 @@
-package main
+package leetcode
 
-import("fmt")
 
 func longestCommonPrefix(strs []string) string {
 	if len(strs) == 0{
@@ -38,9 +37,4 @@ func longestCommonPrefix(strs []string) string {
 	}
 
 	return ans
-}
-
-func main() {
-	str := []string{"cba",""}
-	fmt.Println(longestCommonPrefix(str))
 }

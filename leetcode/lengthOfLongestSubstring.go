@@ -1,10 +1,10 @@
-package main
+package leetcode
 
 import(
 )
 
 
-func isRepeat(s string, t string) bool {
+func isRepeatLOS(s string, t string) bool {
 	for i := 0 ; i < len(s) ; i ++{
 		if t[0] == s[i]{
 			return true
@@ -26,7 +26,7 @@ func LengthOfLongestSubstring(s string) int {
 				break
 			}
 
-			if isRepeat(s[i:j], s[j:j+1]){
+			if isRepeatLOS(s[i:j], s[j:j+1]){
 				if max < len(s[i:j]){
 					max = len(s[i:j])
 				}
