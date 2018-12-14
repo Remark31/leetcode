@@ -18,6 +18,24 @@ func heap_sort() {
 	}
 }
 
+func queue() {
+
+	a := []int{5, 6, 2, 3, 4, 1}
+	q := datastruct.InitQueue()
+
+	for i := 0; i < len(a); i++ {
+		q.Push(a[i])
+		q.WalkQueue()
+	}
+
+	for !q.Empty() {
+		fmt.Println(q.Pop())
+	}
+
+}
+
 func main() {
-	heap_sort()
+	// heap_sort()
+	queue()
+	// fmt.Println(leetcode.ReachNumber(4))
 }

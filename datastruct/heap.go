@@ -60,6 +60,7 @@ func (h *Heap) shiftUp(index int) {
 		index = parent
 		parent = (index - 1) / 2
 	}
+
 }
 
 // 下沉
