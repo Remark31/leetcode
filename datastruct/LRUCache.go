@@ -29,7 +29,7 @@ type LRUCache struct {
 	tail     *LRUnode
 }
 
-func ConstructorLRU(capacity int) LRUCache {
+func ConstructorLRUCache(capacity int) LRUCache {
 	data := map[int]*LRUnode{}
 	cap := capacity
 	head := new(LRUnode)
