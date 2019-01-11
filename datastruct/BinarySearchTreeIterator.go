@@ -47,7 +47,7 @@ func walkTree(node *TreeNode, a *BSTIterator) {
 
 }
 
-func Constructor(root *TreeNode) BSTIterator {
+func ConstructorBST(root *TreeNode) BSTIterator {
 	head := BSTIterator{}
 	head.stack = new(BSTstack)
 	walkTree(root, &head)

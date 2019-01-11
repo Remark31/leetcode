@@ -39,7 +39,7 @@ func initTree(d []int) *TreeNode {
 func TestConstructor(t *testing.T) {
 	num := []int{3, 4, 6, 7}
 	root := initTree(num)
-	ir := Constructor(root)
+	ir := ConstructorBST(root)
 	v := ir.Next()
 	if v != 3 {
 		t.Error("A", v)
