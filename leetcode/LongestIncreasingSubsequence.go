@@ -42,7 +42,7 @@ func lcs(nums []int) int {
 }
 
 func lengthOfLIS(nums []int) int {
-	dp := make([]int, len(nums), 1)
+	dp := make([]int, len(nums))
 	for i := 0; i < len(nums); i++ {
 		for j := 0; j < i; j++ {
 			if nums[i] > nums[j] {

@@ -11,7 +11,7 @@ type Solution struct {
 	ranges   float64
 }
 
-func Constructor(radius float64, x_center float64, y_center float64) Solution {
+func ConstructorRandom(radius float64, x_center float64, y_center float64) Solution {
 	s := Solution{}
 	s.radius = radius
 	s.x_center = x_center
