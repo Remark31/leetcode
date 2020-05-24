@@ -1,5 +1,6 @@
 package leetcode
 
+<<<<<<< HEAD
 func getscore(a []int) int {
 	ans := 0
 	for i := range a {
@@ -23,4 +24,8 @@ func bestRotation(A []int) int {
 		}
 	}
 	return maxindex
+=======
+func bestRotation(A []int) int {
+	return 0
+>>>>>>> 6b4d0b46e6b47ba4c2229521978a743f602d61f9
 }
