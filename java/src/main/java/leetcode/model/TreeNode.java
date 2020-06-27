@@ -7,4 +7,22 @@ public class TreeNode {
     public TreeNode(int x){
         val = x;
     }
+
+
+    public void print(TreeNode node){
+        if(node == null){
+            return ;
+        }
+        System.out.println(node.val);
+        if(node.left != null){
+            print(node.left);
+        }
+
+        if(node.right != null){
+            print(node.right);
+        }
+
+    }
+
+
 }
